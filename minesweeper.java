@@ -84,7 +84,6 @@ public class minesweeper {
 		timer = new Timer(1000, new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
 				count++;
 				if (count < 100000) {
 					time.setText(Integer.toString(count));
@@ -128,7 +127,6 @@ public class minesweeper {
 					button.addActionListener(new ActionListener() {
 						@Override
 						public void actionPerformed(ActionEvent arg0) {
-							// TODO Auto-generated method stub
 							generateMines(mines, rc, cc);
 							countMinesNearSquare();
 							cellDisplay.removeAll();
@@ -157,12 +155,6 @@ public class minesweeper {
 							break;
 						}
 						case 1: {
-							/*
-							 * ImageIcon image = null; try { image = new ImageIcon(new URL(
-							 * "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Minesweeper_1.svg/480px-Minesweeper_1.svg.png"
-							 * )); } catch (MaLformedURLException e) { // TODO Auto-generated catch block
-							 * e.printStackTrace(); } aL a = new aL(button, image);
-							 */
 							aL a = new aL(button, "1", i, j);
 							button.addActionListener(a);
 							button.addMouseListener(a);
@@ -362,7 +354,6 @@ public class minesweeper {
 		}
 		@Override
 		public void mouseClicked(MouseEvent arg0) {
-			// TODO Auto-generated method stub
 			if (arg0.getButton() == MouseEvent.BUTTON3 && button.isEnabled()) {
 
 				if (flag) {
@@ -382,19 +373,19 @@ public class minesweeper {
 		}
 		@Override
 		public void mouseEntered(MouseEvent arg0) {
-			// TODO Auto-generated method stub
+		
 		}
 		@Override
 		public void mouseExited(MouseEvent arg0) {
-			// TODO Auto-generated method stub
+		
 		}
 		@Override
 		public void mousePressed(MouseEvent arg0) {
-			// TODO Auto-generated method stub
+			
 		}
 		@Override
 		public void mouseReleased(MouseEvent arg0) {
-			// TODO Auto-generated method stub
+		
 		}
 
 		public void checkSpot(int r, int c) {
